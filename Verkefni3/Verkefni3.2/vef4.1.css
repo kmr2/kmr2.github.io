@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:rgb(116, 67, 12);
+}
+/*drffdef*/
+header {
+    grid-area: header;
+    text-align:center;
+    background-color:white;
+    color:rgb(116, 67, 12);
+    font-family: 'Fira Sans', sans-serif;
+}
+.topmenu {
+    grid-area: topmenu;
+    background-color:rgb(66, 49, 218);
+}
+.content {
+    grid-area: content;
+    font-family: 'B612', sans-serif;
+}
+footer {
+    grid-area: footer;
+    background-color:rgb(66, 49, 218);
+}
+footer, .content, header, .topmenu{
+    border:1px solid black;
+}
+/* template */
+
+.middle {
+    grid-area:middle;
+    border:1px solid black;
+    padding: 1em;
+    font-size:120%;
+    line-height: 160%;
+    background-color:rgb(116, 67, 12);
+    color:white;
+}
+.right {
+    grid-area:right;
+    border:0.5px solid black;
+    padding: 1em;
+    font-size:120%;
+    line-height: 160%;
+    background-color:white;
+    color:rgb(116, 67, 12);
+}
+.content {
+    display:grid;
+    grid-template-areas:
+    "middle right";
+    grid-template-columns: 4fr 4fr;
+}
+
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "topmenu"
+        "content"
+        "footer";
+        
+        max-width:120em;
+        margin:0 auto;  
+}
+/*aaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+.navs {
+    display:flex;
+    flex-flow:row;
+    justify-content: space-around;    
+    list-style-type:none;
+    
+}
+.ooga {
+    display:flex;
+    flex-flow:row;
+    justify-content: space-around;    
+    list-style-type:none;
+
+}
+h1 {
+    font-weight: 5000;
+    font-size: 3em;
+}
+
+a:visited {
+    color:brown;    
+}
+
+a:active {
+    color:black;
+}
+
+a:link {
+    color:lightblue;
+}
