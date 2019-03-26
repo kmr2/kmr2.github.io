@@ -42,7 +42,6 @@ ul{
 }
 .container {
     max-width: 60em;
-    max-height: 30em;
     margin: 0 auto;
 }
 .col-2 {
@@ -96,4 +95,10 @@ a:active {
 }
 .list2 a:last-child {
     border:none;
+}
+.mynd {
+    float:right;
+}
+.em2 {
+    margin-right:2em;
 }
