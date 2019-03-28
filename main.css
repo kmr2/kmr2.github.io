@@ -102,3 +102,11 @@ a:active {
 .em2 {
     margin-right:2em;
 }
+audio{
+    width: 560px;
+    padding-top: 1em;
+}
+.gif-padding {
+    padding-right: 10px;
+    padding-top: 1em;
+}
