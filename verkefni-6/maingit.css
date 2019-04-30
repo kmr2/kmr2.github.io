@@ -1,0 +1,163 @@
+body {
+    background-color:rgb(36, 110, 206);
+    color:white;
+    margin: 0;
+}
+.bgrunnur {
+    background-image: linear-gradient(rgb(255, 255, 0), rgb(255, 255, 150));
+    color:black;
+}
+header {
+    padding:2em;
+}
+h1 {
+    font-size: 200%;
+}
+section {
+    line-height: 160%;
+    padding: 2em;
+    font-family: 'Titillium Web', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+.list {
+    display:flex;
+    flex-flow:row;
+    justify-content: space-around;    
+    line-height: 150%;
+}
+.listheader {
+    vertical-align: baseline;
+    display: inline-block;
+    text-align: right;
+    font-family: 'Titillium Web', sans-serif;
+}
+.verkheader {
+    color:yellow;
+}
+.bak {
+    padding-left: 1.5em;
+    font-family: 'Titillium Web', sans-serif;
+}
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+}
+.col-2 {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.col-3 {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.transparent {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+a:hover {   
+    color:rgb(245, 245, 98);
+    text-decoration: none;
+}
+a:visited {
+    color:white;
+    text-decoration: none;
+}
+a:link {
+    color:white;
+    text-decoration: none;
+}
+a:active {
+    color:yellow;
+}
+.list2 {
+    display:flex;
+    flex-flow:row;
+    justify-content: center;    
+    background-color:rgb(36, 110, 206);
+    max-height: 2.1em;
+}
+.list2 a {
+    display:block;
+    padding: 0.5em;
+    background-color:yellow;
+    color:rgb(36, 110, 206);
+    border-right:1px solid rgb(36, 110, 206);
+}
+
+.list2 a:hover, .list2 a:active {
+    color:black;
+    background-color:rgb(36, 110, 206);
+}
+.list2 a:visited, .list2 a:link {
+    color: rgb(36, 110, 206);
+}
+.list2 a:last-child {
+    border:none;
+}
+.mynd {
+    float:right;
+}
+.em2 {
+    margin-right:2em;
+}
+audio{
+    width: 560px;
+    padding-top: 1em;
+}
+.gif-padding {
+    padding-right: 10px;
+    padding-top: 1em;
+}
+
+/* =======================================
+*  myndvinnsla  *
+======================================== */
+
+/*  ========================================
+Viðmið - breakpoints 30em = 480px + 
+========================================*/
+
+@media screen and (min-width: 30em) {
+
+}
+
+/*  ========================================
+Viðmið - breakpoints 37.5em = 600px + 
+========================================*/
+
+@media screen and (min-width: 37.5em) {
+    
+  }
+
+  /* ========================================
+Viðmið - breakpoints 48em = 760px +
+======================================== */
+
+@media screen and (min-width: 48em) {  
+
+}
+
+      /* ========================================
+  Viðmið - breakpoints 60em = 960px +
+  ======================================== */
+
+@media screen and (min-width: 60em) { 
+    .col-2 {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .col-3 {
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  /* ========================================
+  Viðmið - breakpoints 80em = 1280px +
+  ======================================== */
+  
+  @media screen and (min-width: 80em) { 
+
+  }
