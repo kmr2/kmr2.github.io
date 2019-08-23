@@ -11,3 +11,4 @@
     * git log - getur séð history fyrir repository
     * git checkout - skiptir í gamla útgáfu af commitonum
     * git branch - notuð til að búa til lista breyta nöfnum og eyða branches
+4. Hvað er útgáfustýring (Version Control)? Hjálpar liðum að sjá source code yfir tíman
