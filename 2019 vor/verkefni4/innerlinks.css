@@ -1,0 +1,111 @@
+body {
+    background-color:rgb(36, 110, 206);
+    color:white;
+    margin: 0;
+}
+.bgrunnur {
+    background-image: linear-gradient(rgb(255, 255, 0), rgb(255, 255, 100));
+    color:black;
+}
+header {
+    padding:2em;
+    width: 100%;
+}
+section {
+    height: 100vh;
+    align-self:center;
+    line-height: 140%;
+    padding: 2em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+.list {
+    display:flex;
+    flex-flow:row;
+    justify-content: space-around;    
+    line-height: 150%;
+}
+.listheader {
+    vertical-align: baseline;
+    display: inline-block;
+    text-align: right;
+    font-family: 'Titillium Web', sans-serif;
+    width: 100%;
+}
+.verkheader {
+    color:yellow;
+}
+.bak {
+    padding-left: 1.5em;
+    font-family: 'Titillium Web', sans-serif;
+}
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+}
+.col-2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col-3 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+a:hover {   
+    color:rgb(245, 245, 98);
+    text-decoration: none;
+}
+a:visited {
+    color:whitesmoke;
+    text-decoration: none;
+}
+a:link {
+    color:white;
+    text-decoration: none;
+}
+a:active {
+    color:yellow;
+}
+.list2 {
+    display:flex;
+    flex-flow:row;
+    justify-content: center;    
+    background-color:rgb(36, 110, 206);
+}
+.list2 a {
+    display:block;
+    padding: 0.5em;
+    background-color:rgb(36, 110, 206);
+    color:rgb(255, 255, 0);
+    border-right:1px solid yellow;
+}
+
+.list2 a:hover, .list2 a:active {
+    color:rgb(36, 110, 206);
+    background-color:yellow;
+}
+.list2 a:visited, .list2 a:link {
+    color: yellow;
+}
+.list2 a:last-child {
+    border:none;
+}
+
+section a:visited {
+    color:blue;
+}
+
+.efst {
+bottom:10px;
+right: 15px;
+}
+.around {
+    position:fixed;
+    height: 50px;
+    width: 50px;
+    background: lightblue;
+    border-radius: 50%;
+}
