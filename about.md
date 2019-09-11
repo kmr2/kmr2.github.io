@@ -5,5 +5,4 @@ title: about
 
 # About page
 
-
-{{ "this page tells you a little bit about me." | downcase }}
+[Github mitt](https://github.com/kmr2/kmr2.github.io)
