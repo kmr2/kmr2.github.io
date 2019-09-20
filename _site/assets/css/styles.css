@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body { background-color: #bb0000; color: yellow; margin: 0; }
+body { background-color: #bb0000; color: yellow; max-width: 60em; margin: 0 auto; }
 
 .bgrunnur { background-image: linear-gradient(yellow, #ffff96); color: black; }
 
@@ -51,11 +51,7 @@ a:active { color: yellow; }
 
 .em2 { margin-right: 2em; }
 
-audio { width: 560px; padding-top: 1em; }
-
 img { max-width: 100%; height: auto; }
-
-.gif-padding { padding-right: 10px; padding-top: 1em; }
 
 /* ======================================= myndvinnsla  * ======================================== */
 /*  ========================================
