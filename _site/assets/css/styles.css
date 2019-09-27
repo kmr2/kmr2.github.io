@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body { background-color: #bb0000; color: yellow; max-width: 60em; margin: 0 auto; }
+body { background-image: linear-gradient(#bb0000, red); color: yellow; max-width: 60em; margin: 0 auto; padding: 1em; }
 
 .bgrunnur { background-image: linear-gradient(yellow, #ffff96); color: black; }
 
@@ -37,7 +37,7 @@ a:link { color: white; text-decoration: none; }
 
 a:active { color: yellow; }
 
-.list2 { display: flex; flex-flow: row; justify-content: center; background-color: #bb0000; max-height: 2.1em; }
+.list2 { display: flex; flex-flow: row; justify-content: center; max-height: 2.1em; }
 
 .list2 a { display: block; padding: 0.5em; background-color: yellow; color: yellow; border-right: 1px solid #246ece; }
 
@@ -53,16 +53,22 @@ a:active { color: yellow; }
 
 img { max-width: 100%; height: auto; }
 
+.topnav a { padding-right: 4em; }
+
 /* ======================================= myndvinnsla  * ======================================== */
 /*  ========================================
 Viðmið - breakpoints 30em = 480px + 
 ========================================*/
+@media screen and (min-width: 30em) { .imagemiddle { display: block; margin-left: auto; margin-right: auto; } }
+
 /*  ========================================
 Viðmið - breakpoints 37.5em = 600px + 
 ========================================*/
 /* ========================================
 Viðmið - breakpoints 48em = 760px +
 ======================================== */
+@media screen and (min-width: 48em) { .imagemiddle { display: block; margin-left: auto; margin-right: auto; } }
+
 /* ======================================== Viðmið - breakpoints 60em = 960px + ======================================== */
 @media screen and (min-width: 60em) { .col-2 { display: grid; grid-template-columns: 1fr 1fr; }
   .col-3 { display: grid; grid-template-columns: 1fr 2fr; } }

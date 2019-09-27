@@ -5,7 +5,7 @@ title: about
 
 # About page
 
-![Boxart]({{  '/assets/images/Borderlands2boxart.jpg' |  prepend:site.baseurl }})
+![Boxart]({{  '/assets/images/Borderlands2boxart.jpg' |  prepend:site.baseurl }}){:class="imagemiddle"}
 
 Borderlands 2 is an action role-playing first-person shooter video game developed by Gearbox Software and published by 2K Games. It is the second game in the Borderlands series and the sequel to 2009's Borderlands. The game was released for Microsoft Windows, PlayStation 3, Xbox 360, and OS X on September 18, 2012. It was ported to the PlayStation Vita on May 13, 2014, and released for Linux on September 30, 2014.
 
