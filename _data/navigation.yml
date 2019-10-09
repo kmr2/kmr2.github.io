@@ -1,6 +1,6 @@
-- name: Home
+- name: <span class="icon-home"></span>Home
   link: /
-- name: About
+- name: <span class="icon-question">About
   link: /about.html
-- name: Staff
+- name: <span class="icon-user-tie">Staff
   link: /staff.html

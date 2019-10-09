@@ -10,6 +10,7 @@ body {
     margin: 0 auto;
     padding: 1em;
 }
+
 .bgrunnur {
     background-image: linear-gradient(rgb(255, 255, 0), rgb(255, 255, 150));
     color:black;
@@ -95,7 +96,6 @@ a:active {
     color:yellow;
     border-right:1px solid rgb(36, 110, 206);
 }
-
 .list2 a:hover, .list2 a:active {
     color:black;
     background-color:rgb(36, 110, 206);
@@ -120,7 +120,19 @@ img {
 .topnav a {
     padding-right: 4em;
 }
-
+.icon-patch:before {
+    font-size: 20px;
+    padding-right: 0.25em;
+}
+.icon-home:before {
+    padding-right:0.25em;
+}
+.icon-question:before {
+    padding-right:0.25em;
+}
+icon-user-tie:before {
+    padding-right:0.25em;
+}
 
 /* =======================================
 *  myndvinnsla  *
