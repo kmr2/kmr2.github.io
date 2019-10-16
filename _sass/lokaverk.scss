@@ -130,8 +130,14 @@ img {
 .icon-question:before {
     padding-right:0.25em;
 }
-icon-user-tie:before {
+.icon-user-tie:before {
     padding-right:0.25em;
+}
+.GearSvg {
+    padding-top:0.5em;
+    width:50px;
+    height:50px;
+    margin: 0 auto;
 }
 
 /* =======================================
@@ -148,6 +154,7 @@ Viðmið - breakpoints 30em = 480px +
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 /*  ========================================
@@ -156,7 +163,7 @@ Viðmið - breakpoints 37.5em = 600px +
 
 @media screen and (min-width: 37.5em) {
 
-  }
+}
 
   /* ========================================
 Viðmið - breakpoints 48em = 760px +
@@ -168,6 +175,7 @@ Viðmið - breakpoints 48em = 760px +
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
       /* ========================================

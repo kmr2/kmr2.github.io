@@ -61,7 +61,9 @@ img { max-width: 100%; height: auto; }
 
 .icon-question:before { padding-right: 0.25em; }
 
-icon-user-tie:before { padding-right: 0.25em; }
+.icon-user-tie:before { padding-right: 0.25em; }
+
+.GearSvg { padding-top: 0.5em; width: 50px; height: 50px; margin: 0 auto; }
 
 /* ======================================= myndvinnsla  * ======================================== */
 /*  ========================================
