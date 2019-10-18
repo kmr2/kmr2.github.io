@@ -139,7 +139,52 @@ img {
     height:50px;
     margin: 0 auto;
 }
-
+.topmenu {
+    display: block;
+    position: fixed;
+    top: 3em;
+    right: -29em;
+    z-index: 980;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: all .5s ease;
+    background-color: rgb(187,0,0);
+}
+/*
+.menuinput {
+    display:none;
+}
+*/
+.menuinput:checked ~ .topmenu {
+    position: fixed;
+    top: 4.25em;
+    right: -2.5em;
+    z-index: 980;
+    transition: all .5s ease;
+}
+.menulabel {
+    position: fixed;
+    top: 0em;
+    right: 0em;
+    width: 2.5em;
+    height: 1.6em;
+    color: #0B3E7A;
+    font-size: 1.5em;
+    text-align: left;
+    padding: .5em;
+    transition: all .4s ease;
+    z-index: 999;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.topmenu a {
+font-size:20px;
+}
+.topmenu a.current {
+    color: black;
+}
 /* =======================================
 *  myndvinnsla  *
 ======================================== */
@@ -175,7 +220,16 @@ Viðmið - breakpoints 48em = 760px +
         margin-left: auto;
         margin-right: auto;
     }
-
+}
+@media screen and (max-width: 48em) {  
+    .imagemiddle {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hidehr {
+        display:none;
+    }
 }
 
       /* ========================================
@@ -199,5 +253,7 @@ Viðmið - breakpoints 48em = 760px +
   ======================================== */
   
   @media screen and (min-width: 80em) { 
-
+    .topmenu {
+        display:none;
+    }
   }

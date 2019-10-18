@@ -8,12 +8,23 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
+    <nav>
+      <div class="topmenu">
+      <input type="checkbox" id="toggle" class="menuinput">
+      <label for="toggle" class="menulabel">
+        <img src="../assets/images/menu.svg" height="20px" width="20px">
+      </label>
+      <div class="topmenu">
+        {% include navigational.html %}
+      </div>
+    </div>
+    </nav>
     {% include navigational.html %}
-    <hr>
+    <hr class="hidehr">
     <main>
       {{ content }}
     </main>
-    <hr>
+    <hr class="hidehr">
     <footer>
       {% include footer.html %}
     </footer>
