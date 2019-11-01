@@ -26,11 +26,13 @@
     {% include navigational.html %}
     <hr class="hidehr">
     <main>
+      <article>
       {{ content }}
+    </article>
+      <aside>
+        {% include auglysing.html %}
+      </aside>
     </main>
-    <aside>
-      {% include auglysing.html %}
-    </aside>
     <hr class="hidehr">
     <footer>
       {% include footer.html %}

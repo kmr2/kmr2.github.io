@@ -82,7 +82,11 @@ img { max-width: 100%; height: auto; }
 
 .topmenu a.current { color: black; }
 
-#ad-1 { width: 300px; height: 720px; float: left; margin: 40px auto 0; color: gray; background-position: center; background-repeat: no-repeat; overflow: hidden; position: relative; box-shadow: 0px 0px 6px #000; }
+#ad-1 { width: 250px; height: 500px; float: left; margin: 0 1em; background-color: gray; background-position: center; background-repeat: no-repeat; overflow: hidden; position: relative; box-shadow: 0px 0px 6px #000; }
+
+main { display: grid; grid-template-columns: 1fr; grid-gap: 2em; }
+
+#ad-1 { display: inline-block; height: 20px; padding: 10px; color: blue; background-color: #fff; border-radius: 5px; border: 1px solid #fff; }
 
 /* ======================================= myndvinnsla  * ======================================== */
 /*  ========================================
@@ -97,13 +101,15 @@ Viðmið - breakpoints 37.5em = 600px +
   .topmenu { display: block; position: fixed; top: 5em; right: -10em; z-index: 980; padding: 0; margin: 0; list-style: none; transition: all .5s ease; background-color: #bb0000; }
   .menuinput:checked ~ .topmenu { position: fixed; top: 5em; right: -4em; z-index: 980; transition: all .5s ease; } }
 
+@media screen and (min-width: 37.5em) { .imagemiddle { display: block; margin-left: auto; margin-right: auto; } }
+
 /* ========================================
 Viðmið - breakpoints 48em = 760px +
 ======================================== */
-@media screen and (min-width: 48em) { .imagemiddle { display: block; margin-left: auto; margin-right: auto; } }
+@media screen and (min-width: 48em) { .imagemiddle { display: block; margin-left: auto; margin-right: auto; }
+  main { display: grid; grid-template-columns: 3fr 1fr; grid-gap: 2em; } }
 
-@media screen and (max-width: 48em) { .imagemiddle { display: block; margin-left: auto; margin-right: auto; }
-  .hidehr { display: none; } }
+@media screen and (max-width: 48em) { .hidehr { display: none; } }
 
 /* ======================================== Viðmið - breakpoints 60em = 960px + ======================================== */
 @media screen and (min-width: 60em) { .col-2 { display: grid; grid-template-columns: 1fr 1fr; }
