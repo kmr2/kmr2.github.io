@@ -197,32 +197,61 @@ font-size:20px;
 .topmenu a.current {
     color: black;
 }
-#ad-1 {
-	width: 250px;
-	height: 500px;
-	float: left;
-	margin: 0 1em;
-	background-color:gray;
-	background-position: center;
-	background-repeat: no-repeat;
-	overflow: hidden;
-	position: relative;
-	box-shadow: 0px 0px 6px #000;
-}
 main {
     display:grid;
     grid-template-columns:1fr ;
     grid-gap: 2em; 
 }
+/* =======================================
+*  ad  *
+======================================== */
 #ad-1 {
-    display:inline-block;
-    height:20px;
-    padding:10px;
-    color:blue;
-    background-color: #fff;
+	width: 250px;
+	height: 500px;
+	margin: 0 1em;
+    background-color:white;
+    color:red;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+    box-shadow: 0px 0px 6px #000;
+    border: solid red;
+    padding:1em;
+}
+.free {
+    height: 10em;
+    padding-left:1.5em;
+    padding-top:2em;
+    position:relative;
+    animation-name:test;
+    transition:transform 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes test {
+    100% {transform:scale(2.2);}
+}
+
+#ad-1 a:link {
+    position:relative;
+    text-align: center;
+    display:block;
+    height:90px;
+    padding:1em;
+    color:red;
+    background-color: rgb(221, 0, 0);
     border-radius:5px;
     border:1px solid #fff;
+    animation:slide 14s infinite;
+    right:15em;
 }
+@keyframes slide {
+20% {right:-20cem;}
+80% {right:0em;}
+100% {right:100em;}
+}
+
+
 
 /* =======================================
 *  myndvinnsla  *
