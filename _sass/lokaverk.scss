@@ -255,6 +255,75 @@ main {
     margin-top:2.5em;
 }
 
+/* =======================================
+*  table  *
+======================================== */
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+
+    width: 100%;
+    table-layout: fixed;
+    text-align:center;
+}
+caption {
+    border: 1px solid #c6c7cc;
+    padding: 10px 15px;
+    background: #395870;
+    color: #fff;
+}
+table th {
+    color:yellow;
+    letter-spacing: .05em;
+    padding: 0.5em;
+}
+table tr {
+    background: rgb(200,0,0);
+}
+tbody tr:nth-child(2n+1) {
+    background: rgb(221, 0, 0);
+}
+table td {
+    font-style:italic;
+    padding:0.7em;
+}
+th, td {
+  border: 1px solid #c6c7cc;
+  
+}
+/* =======================================
+*  table  *
+======================================== */
+form {
+    border: 1px solid #c6c7cc;
+    border-radius: 5px;
+    
+    padding:1em;
+    margin-top:1em;
+    max-width: 30em;
+    height:500px;
+  }
+.sign input, .sign select, .sign textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    color:#444;
+    display: inline;
+    margin: 5px 0 1em 0;
+    padding: 5px 8px;
+}
+.sign input[type="text"], .sign input[type="tel"], .sign input[type="email"], .sign textarea {
+    width: 100%;
+}
+.sign textarea {
+    height:10em;
+}
+legend {
+    font-weight:bold;
+    font-family:"Times New Roman", Times, serif;
+}
+
+
+
 
 /* =======================================
 *  myndvinnsla  *
@@ -348,6 +417,29 @@ Viðmið - breakpoints 48em = 760px +
         grid-template-columns: 1fr 2fr;
     }
   }
+  @media screen and (max-width: 600px) {
+    table thead {
+     display:none;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+    }
+  }
+  
+
 
   /* ========================================
   Viðmið - breakpoints 80em = 1280px +
